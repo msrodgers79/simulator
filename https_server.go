@@ -14,8 +14,8 @@ func main() {
 
   http.ListenAndServeTLS(
     ":443",
-    "/etc/letsencrypt/live/api.msrodgers.co.uk/fullchain.pem"
-    "/etc/letsencrypt/live/api.msrodgers.co.uk/privkey.pem"
+    "/etc/letsencrypt/live/api.msrodgers.co.uk/fullchain.pem",
+    "/etc/letsencrypt/live/api.msrodgers.co.uk/privkey.pem",
      nil,
     )
 }
