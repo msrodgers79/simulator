@@ -12,5 +12,5 @@ func getData(w http.ResponseWriter, req *http.Request) {
 func main() {
   http.HandleFunc("/data", getData)
 
-  http.ListenAndServe(":8080", nil)
+  http.ListenAndServe(":80", nil)
 }
