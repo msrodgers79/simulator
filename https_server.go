@@ -12,5 +12,10 @@ func getData(w http.ResponseWriter, req *http.Request) {
 func main() {
   http.HandleFunc("/data", getData)
 
-  http.ListenAndServe(":80", nil)
+  http.ListenAndServeTLS(
+    ":443",
+    "/etc/letsencrypt/live/api.msrodgers.co.uk/fullchain.pem"
+    "/etc/letsencrypt/live/api.msrodgers.co.uk/privkey.pem"
+     nil,
+    )
 }
